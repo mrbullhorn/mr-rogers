@@ -13,40 +13,35 @@ Code: countUp(5);
 ```
 Expected output: [0,1,2,3,4,5]
 
-**Test 3**: "It should count the instances of the number "1".
+**Test 4:** "It should send a message when a string or other value is entered."
 ```javascript
-Code: countUp(5);
+Code: countUp("hans");
 ```
-Expected output: 1
+Expected output: "Please Enter a Number."
 
-**Test 4**: "It should count the instances of the number "2".
-```javascript
-Code: countUp(5);
-```
-Expected output: 1
+***
+<br>
 
-**Test 5**: "It should count the instances of the number "3".
-```javascript
-Code: countUp(5);
-```
-Expected output: 1
+**Describe: makeFun()**
 
-**Test 6:** "It should return an array with the number '1' replaced with the string 'Beep!'".
+***
+
+**Test 1:** "It should return an array with the number '1' replaced with the string 'Beep!'".
 ```javascript
 Code: countUp(5);
 ```
 Expected output: "[0,'Beep!', 2,3,4,5]
 
-**Test 7:** "It should return an array with the number '1' replaced with the string 'Beep!' and the number '2' replaced with the string 'Boop!'".
+**Test 2:** "It should return an array with the number '1' replaced with the string 'Beep!' and the number '2' replaced with the string 'Boop!'".
 ```javascript
 Code: countUp(5);
 ```
 Expected output: "[0,'Beep!', 'Boop!' ,3,4,5]"
 
-**Test 8:** "It should return an array with the number '1' replaced with the string 'Beep!' and the number '2' replaced with the string 'Boop!' and the number '3' replaced with the string 'Won't you be my neighbor?'"
+**Test 3:** "It should return an array with the number '1' replaced with the string 'Beep!' and the number '2' replaced with the string 'Boop!' and the number '3' replaced with the string 'Won't you be my neighbor?'"
 ```javascript
 Code: countUp(5);
 ```
 Expected output: "[0,'Beep!, 'Boop!','Won't you be my neighbor?',4,5]"
 
-**Test 9:** 
+**Test 4:** 

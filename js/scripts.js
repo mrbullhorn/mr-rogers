@@ -6,8 +6,13 @@ function countUp(userInput) {
   const ourArray = []
   for (index = 0; index <= ourNum; index += 1) {
     ourArray.push(0 + index);
-  } 
-return ourArray;
+    }
   }
+  ourArray.forEach(function(number) {
+      ourArray.splice(number -1,  1, "Beep!")
+  });
 }
+
+
+
 
