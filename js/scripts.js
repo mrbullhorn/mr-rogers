@@ -31,11 +31,14 @@ function countUp(userInput) {
     
   }
   ourArray.forEach(function(number) {
-      stringNum = number.toString()
-      if (stringNum.includes("2")) {
-        ourArray.splice(stringNum, 1, "Boop!")
-      } else if (stringNum.includes("1")) {
-      ourArray.splice(stringNum,  1, "Beep!")
+      stringNum = number.toString();
+      
+      if (stringNum.includes(3)) {
+        ourArray.splice(stringNum, 1, "Won't you be my neighbor?");
+      } else if (stringNum.includes("2")) {
+        ourArray.splice(stringNum, 1, "Boop!");
+      } else (stringNum.includes("1")) {
+      ourArray.splice(stringNum,  1, "Beep!");
       }
     });
   return ourArray;
