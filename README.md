@@ -19,29 +19,22 @@ Code: countUp("hans");
 ```
 Expected output: "Please Enter a Number."
 
-***
-<br>
 
-**Describe: makeFun()**
-
-***
-
-**Test 1:** "It should return an array with the number '1' replaced with the string 'Beep!'".
+**Test 5:** "It should return an array with the number '1' replaced with the string 'Beep!'".
 ```javascript
 Code: countUp(5);
 ```
 Expected output: "[0,'Beep!', 2,3,4,5]
 
-**Test 2:** "It should return an array with the number '1' replaced with the string 'Beep!' and the number '2' replaced with the string 'Boop!'".
+**Test 6:** "It should return an array with the number '1' replaced with the string 'Beep!' and the number '2' replaced with the string 'Boop!'".
 ```javascript
 Code: countUp(5);
 ```
 Expected output: "[0,'Beep!', 'Boop!' ,3,4,5]"
 
-**Test 3:** "It should return an array with the number '1' replaced with the string 'Beep!' and the number '2' replaced with the string 'Boop!' and the number '3' replaced with the string 'Won't you be my neighbor?'"
+**Test 7:** "It should return an array with the number '1' replaced with the string 'Beep!' and the number '2' replaced with the string 'Boop!' and the number '3' replaced with the string 'Won't you be my neighbor?'"
 ```javascript
 Code: countUp(5);
 ```
 Expected output: "[0,'Beep!, 'Boop!','Won't you be my neighbor?',4,5]"
 
-**Test 4:** 

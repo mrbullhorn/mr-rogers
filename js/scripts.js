@@ -24,3 +24,19 @@ function countUp(userInput) {
 
 //////
 
+
+window.addEventListener("load", function() {
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    const theNumber = document.getElementById("theOnlyInput").value;
+       
+    finalArray = countUp(theNumber);
+    printText = finalArray.join(", ");
+    const outPut = document.createElement("p");
+    outPut.append(printText);
+    console.log(outPut);
+    document.querySelector("form").append(outPut);
+    
+  })
+  });
