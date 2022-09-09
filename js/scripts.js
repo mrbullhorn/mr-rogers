@@ -30,7 +30,6 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     const theNumber = document.getElementById("theOnlyInput").value;
-       
     finalArray = countUp(theNumber);
     printText = finalArray.join(", ");
     const outPut = document.createElement("p");
