@@ -1,9 +1,6 @@
 //business logic
 function countUp(userInput) {
-  let ourNum = parseInt(userInput)
-  if (isNaN(ourNum)) {
-    return "Please Enter a Number.";
-  }
+  let ourNum = userInput
   const ourArray = []
   for (index = 0; index <= ourNum; index += 1) {
     ourArray.push(0 + index);
@@ -30,7 +27,15 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     const theNumber = document.getElementById("theOnlyInput").value;
+    if (isNaN(theNumber)) {
+      let errMsg = "Please Enter a Number.";
+      const outPut = document.createElement("p");
+      outPut.append(errMsg);
+      console.log(outPut);
+      document.querySelector("form").append(outPut);
+      }
     finalArray = countUp(theNumber);
+    console.log(finalArray);
     printText = finalArray.join(", ");
     const outPut = document.createElement("p");
     outPut.append(printText);
