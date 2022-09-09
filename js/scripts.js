@@ -43,4 +43,12 @@ window.addEventListener("load", function() {
     document.querySelector("form").append(outPut);
     
   })
+  form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      let finalAnswer = document.querySelector("");
+      finalAnswer.remove();
+    })
+
   });
+
+  
