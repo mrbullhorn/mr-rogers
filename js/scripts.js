@@ -30,9 +30,7 @@ window.addEventListener("load", function() {
 
     if (isNaN(theNumber)) {
       let errMsg = "Please Enter a Number.";
-      const outPut = document.createElement("p");
-      outPut.append(errMsg);
-      document.querySelector("form").append(outPut);
+      document.querySelector("span#hide-me").innerText = errMsg;
       }
     finalArray = countUp(theNumber);
     printText = finalArray.join(", ");
