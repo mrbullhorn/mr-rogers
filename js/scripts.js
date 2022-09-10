@@ -7,7 +7,7 @@ function countUp(userInput) {
   }
   ourArray.forEach(function(number) {
       stringNum = number.toString();
-      if (stringNum.includes(3)) {
+      if (stringNum.includes("3")) {
         ourArray.splice(stringNum, 1, "Won't you be my neighbor?");
       } else if (stringNum.includes("2")) {
         ourArray.splice(stringNum, 1, "Boop!");
@@ -18,26 +18,22 @@ function countUp(userInput) {
   return ourArray;
 }
 
-
-//////
-
-
 window.addEventListener("load", function() {
   const form = document.querySelector("form");
   form.addEventListener("submit", function(event) {
     event.preventDefault();
-    const theNumber = document.getElementById("theOnlyInput").value;
-
-    if (isNaN(theNumber)) {
-      let errMsg = "Please Enter a Number.";
-      document.querySelector("span#hide-me").innerText = errMsg;
-      }
+    const theInput = document.getElementById("theOnlyInput").value;
+    theNumber = parseInt(theInput);
+    console.log(theNumber);
+    if (isNaN(theNumber) || theNumber === "") {
+      document.querySelector("span#output").innerText = "Please Enter a Number.";
+      } else if (theNumber > 100000 ) {
+        console.log(theNumber);
+        document.querySelector("span#output").innerText = "Easy there turbo.";
+      } else {
     finalArray = countUp(theNumber);
     printText = finalArray.join(", ");
-    document.querySelector("span#hide-me").innerText = printText;
-    
-  
-  })
+    document.querySelector("span#output").innerText = printText;
+    }
+  });
 });
-
-  
