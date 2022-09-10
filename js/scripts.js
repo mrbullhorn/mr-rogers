@@ -35,9 +35,7 @@ window.addEventListener("load", function() {
       } else {
     finalArray = countUp(theNumber);
     printText = finalArray.join(", ");
-    const outPut = document.createElement("p");
-    outPut.append(printText);
-    document.getElementById("hide-me").append(outPut);
+    documentQuerySelector("span#result").innerText = printText;
   }
   })
 });
