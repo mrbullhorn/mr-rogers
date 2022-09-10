@@ -24,11 +24,9 @@ window.addEventListener("load", function() {
     event.preventDefault();
     const theInput = document.getElementById("theOnlyInput").value;
     theNumber = parseInt(theInput);
-    console.log(theNumber);
     if (isNaN(theNumber) || theNumber === "") {
       document.querySelector("span#output").innerText = "Please Enter a Number.";
       } else if (theNumber > 100000 ) {
-        console.log(theNumber);
         document.querySelector("span#output").innerText = "Easy there turbo.";
       } else {
     finalArray = countUp(theNumber);
