@@ -27,28 +27,21 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     const theNumber = document.getElementById("theOnlyInput").value;
+
     if (isNaN(theNumber)) {
       let errMsg = "Please Enter a Number.";
       const outPut = document.createElement("p");
       outPut.append(errMsg);
-      console.log(outPut);
       document.querySelector("form").append(outPut);
       }
     finalArray = countUp(theNumber);
-    console.log(finalArray);
     printText = finalArray.join(", ");
     const outPut = document.createElement("p");
     outPut.append(printText);
-    console.log(outPut);
-    document.querySelector("form").append(outPut);
+    document.getElementById("hide-me").append(outPut);
     
+  
   })
-  form.addEventListener("submit", function(event) {
-      event.preventDefault();
-      let finalAnswer = document.querySelector("");
-      finalAnswer.remove();
-    })
-
-  });
+});
 
   
