@@ -18,25 +18,22 @@ function countUp(userInput) {
   return ourArray;
 }
 
-
-//////
-
-
 window.addEventListener("load", function() {
   const form = document.querySelector("form");
   form.addEventListener("submit", function(event) {
     event.preventDefault();
-    const theNumber = document.getElementById("theOnlyInput").value;
+    const theInput = document.getElementById("theOnlyInput").value;
+    theNumber = parseInt(theInput);
+    console.log(theNumber);
     if (isNaN(theNumber) || theNumber === "") {
-      let errMsg = "Please Enter a Number.";
-      const outPut = document.createElement("p");
-      outPut.append(errMsg);
-      document.querySelector("form").append(outPut);
-      } //else {
+      document.querySelector("span#output").innerText = "Please Enter a Number.";
+      } else if (theNumber > 100000 ) {
+        console.log(theNumber);
+        document.querySelector("span#output").innerText = "Easy there turbo.";
+      } else {
     finalArray = countUp(theNumber);
     printText = finalArray.join(", ");
-    documentQuerySelector("span#result").innerText = printText;
-  //}
-  })
+    document.querySelector("span#output").innerText = printText;
+    }
+  });
 });
-
