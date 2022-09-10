@@ -32,11 +32,11 @@ window.addEventListener("load", function() {
       const outPut = document.createElement("p");
       outPut.append(errMsg);
       document.querySelector("form").append(outPut);
-      } else {
+      } //else {
     finalArray = countUp(theNumber);
     printText = finalArray.join(", ");
     documentQuerySelector("span#result").innerText = printText;
-  }
+  //}
   })
 });
 
